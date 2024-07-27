@@ -1,0 +1,157 @@
+:root {
+    /* fonts */
+    --main-font: 'Outfit', sans-serif;
+    --secondary-font: "Young Serif", serif;
+
+    /* colors */
+
+    --White: hsl(0, 0%, 100%);
+
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+
+    --Brown800: hsl(14, 45%, 36%);
+
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--Stone100);
+    display: flex;
+    justify-content: center;
+}
+.page {
+    width: 750px;
+    background-color: var(--White);
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    border-radius: 22px;
+}
+.container {
+    width: 100%;
+    background-color: var(--White);
+    margin: 36px;
+}
+.header h1 {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 44px;
+    color: var(--Stone900);
+}
+.header p{
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--Stone600);
+    margin-bottom: 20px;
+}
+.header img{
+    width: 100%;
+    border-radius: 18px;
+}
+
+.prep-time {
+    background-color: var(--Rose50);
+    border-radius: 10px;
+    font-family: var(--main-font);
+    padding: 16px;
+}
+
+.prep-time h2 {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--Rose800);
+    font-family: var(--main-font);
+}
+
+ul, ol, p{
+    font-size: 14px;
+    color: var(--Stone600);
+    font-weight: 400;
+    font-family: var(--main-font);
+    margin-bottom: 2em;
+}
+
+.ingredients {
+    
+    color: var(--Stone600);
+}
+
+h2 {
+    color: var(--Brown800);
+    font-family: var(--secondary-font);
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.nutrition table{
+    font-family: var(--main-font);
+    font-size: 14px;
+    color: var(--Stone600);
+}
+
+.val {
+    font-weight: 700;
+    color: var(--Brown800);
+}
+
+.nutrition table tr {
+    border-bottom: 1px solid var(--Brown800);
+}
+
+hr {
+    width: 94%;
+    color: var(--Stone150);
+    border: 0.5px solid;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px 0;
+    border-bottom: 1.5px solid var(--Stone150);
+}
+
+td:first-child {
+    color: var(--Stone600);
+}
+
+.value {
+    text-align: left;
+    font-weight: bold;
+    color: var(--Brown800);
+}
+
+@media (max-width:800px) {
+    .page{
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+    .header h1{
+        font-size: 40px;
+    }
+    .header img{
+        width: 100%;
+        border-radius: 0;
+    }
+    .container{
+        margin: 0;
+    }
+    .mediaq {
+        margin: 24px;
+    }
+    .titleQ{
+        margin: 24px;
+    }
+}
